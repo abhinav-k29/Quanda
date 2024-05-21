@@ -1,0 +1,1 @@
+Made mobile responsive page.

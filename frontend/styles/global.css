@@ -1,0 +1,54 @@
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+#thread-container{
+    display: flex;
+}
+
+.thread-space{
+    flex: 1;
+}
+.thread-space:first-child {
+    margin-right: 10px;
+}
+
+.thread-space:nth-child(2) {
+    flex: 2;
+}
+
+/* #thread-list{
+    width: 400px;
+} */
+
+@media(min-width: 1201px) {
+    #thread-list {
+        width: 300px;
+    }
+    #individual-thread {
+        width: 800px;
+    }
+}
+@media(min-width: 701px) and (max-width: 1200px) {
+    #thread-list {
+        width: 250px;
+    }
+    #individual-thread {
+        width: 600px;
+    }
+    #page-inndashboard {
+        order: 3;
+    }
+}
+@media(min-width: 400px) and (max-width: 700px) {
+    #thread-list {
+        width: 100%;
+    }
+    #individual-thread {
+        width: 100%;
+    }
+}
